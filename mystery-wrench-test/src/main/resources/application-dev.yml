@@ -1,0 +1,19 @@
+server:
+  port: 9191
+
+# 谜团扳手通用组件配置
+mystery:
+  wrench:
+    config:
+      system: test-system
+      register:
+        # redis host
+        host: 124.71.185.29
+        # redis port
+        port: 16379
+
+# 日志
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml
