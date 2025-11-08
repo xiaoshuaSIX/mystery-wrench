@@ -3,15 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>com.xiaoshuai66.wrench</groupId>
-        <artifactId>mystery-wrench</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-    </parent>
 
-    <artifactId>mystery-wrench-starter-dynamic-config-center</artifactId>
+    <groupId>com.xiaoshuai66.wrench</groupId>
+    <artifactId>mystery-wrench-bom</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
 
-    <name>mystery-wrench-starter-dynamic-config-center</name>
+    <packaging>pom</packaging>
+
+    <name>mystery-wrench-bom</name>
     <description>Bill of Materials POM (BOM) for the xfg wrench modules</description>
     <url>https://github.com/xiaoshuaSIX/mystery-wrench</url>
 
@@ -46,66 +45,29 @@
         <url>https://github.com/xiaoshuaSIX/mystery-wrench</url>
     </scm>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-        <!-- Spring Boot 配置处理器,主要用于在编译时处理自定义配置类 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.redisson</groupId>
-            <artifactId>redisson-spring-boot-starter</artifactId>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- xfg wrench dcc 动态配置中心 -->
+
+            <dependency>
+                <groupId>com.xiaoshuai66.wrench</groupId>
+                <artifactId>mystery-wrench-starter-dynamic-config-center</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- xfg wrench dcc 动态配置中心 -->
+
+            <dependency>
+                <groupId>com.xiaoshuai66.wrench</groupId>
+                <artifactId>mystery-wrench-starter-design-framework</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
     <build>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-                <includes>
-                    <include>**/**</include>
-                </includes>
-            </resource>
-        </resources>
-        <testResources>
-            <testResource>
-                <directory>src/test/resources</directory>
-                <filtering>true</filtering>
-                <includes>
-                    <include>**/**</include>
-                </includes>
-            </testResource>
-        </testResources>
         <!--<plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

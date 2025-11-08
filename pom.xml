@@ -6,12 +6,13 @@
 
     <groupId>com.xiaoshuai66.wrench</groupId>
     <artifactId>mystery-wrench</artifactId>
-    <version>1.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
         <module>mystery-wrench-starter-dynamic-config-center</module>
         <module>mystery-wrench-test</module>
         <module>mystery-wrench-starter-design-framework</module>
+        <module>mystery-wrench-bom</module>
     </modules>
 
     <properties>
