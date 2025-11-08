@@ -11,6 +11,7 @@
     <modules>
         <module>mystery-wrench-starter-dynamic-config-center</module>
         <module>mystery-wrench-test</module>
+        <module>com.xiaoshuai66.wrench.design.framework</module>
     </modules>
 
     <properties>

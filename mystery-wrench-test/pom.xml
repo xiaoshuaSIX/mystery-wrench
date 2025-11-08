@@ -55,6 +55,11 @@
             <artifactId>mystery-wrench-starter-dynamic-config-center</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.xiaoshuai66.wrench</groupId>
+            <artifactId>mystery-wrench-starter-design-framework</artifactId>
+            <version>1.0</version>
+        </dependency>
 
     </dependencies>
 
