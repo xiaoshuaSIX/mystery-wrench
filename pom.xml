@@ -13,6 +13,7 @@
         <module>mystery-wrench-test</module>
         <module>mystery-wrench-starter-design-framework</module>
         <module>mystery-wrench-bom</module>
+        <module>mystery-wrench-starter-rate-limiter</module>
     </modules>
 
     <properties>

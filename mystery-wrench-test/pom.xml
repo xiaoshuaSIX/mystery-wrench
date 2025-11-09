@@ -55,9 +55,16 @@
             <artifactId>mystery-wrench-starter-dynamic-config-center</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
+        <!-- 设计模式框架 -->
         <dependency>
             <groupId>com.xiaoshuai66.wrench</groupId>
             <artifactId>mystery-wrench-starter-design-framework</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <!-- 动态限流 -->
+        <dependency>
+            <groupId>com.xiaoshuai66.wrench</groupId>
+            <artifactId>mystery-wrench-starter-rate-limiter</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
 
